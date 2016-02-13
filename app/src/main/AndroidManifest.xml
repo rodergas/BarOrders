@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.robertalmar.enblanco" >
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/camareroicon"
+        android:label="Comandes"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Comandes"
+            android:label="Comandes" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".LlistaProductes"
+            android:label="Llista de productes"
+            android:parentActivityName="com.example.robertalmar.enblanco.Comandes"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.robertalmar.enblanco.Comandes" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".AfegirProducte"
+            android:label="Nou producte"
+            android:parentActivityName="com.example.robertalmar.enblanco.LlistaProductes"
+            >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.robertalmar.enblanco.LlistaProductes" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".NovaComanda"
+            android:label="Crear comanda"
+            android:parentActivityName="com.example.robertalmar.enblanco.Comandes">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.robertalmar.enblanco.Comandes" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ConsultarComandes"
+            android:label="Llistar comandes"
+            android:parentActivityName="com.example.robertalmar.enblanco.Comandes">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.robertalmar.enblanco.Comandes" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".Ajuda"
+            android:label="Preguntes freqüents"
+            android:parentActivityName="com.example.robertalmar.enblanco.AboutHelp">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.robertalmar.enblanco.AboutHelp" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".About"
+            android:label="Informació"
+            android:parentActivityName="com.example.robertalmar.enblanco.AboutHelp">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.robertalmar.enblanco.AboutHelp" />
+        </activity>
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".AboutHelp"
+            android:label="Ajuda"
+            android:parentActivityName="com.example.robertalmar.enblanco.Comandes">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.robertalmar.enblanco.Comandes" />
+        </activity>
+    </application>
+
+</manifest>

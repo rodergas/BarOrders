@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comandes bar/restaurant"
+        android:id="@+id/textView9"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:id="@+id/imageView5"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true"
+        android:src = "@drawable/camarero"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Versió 1.0"
+        android:id="@+id/textView28"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Per Robert Almar Graupera"
+        android:id="@+id/textView29"
+        android:layout_below="@+id/textView28"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/imageView6"
+        android:layout_below="@+id/textView29"
+        android:layout_alignEnd="@+id/textView9"
+        android:src ="@drawable/copyright"
+        android:layout_marginRight="130dp"
+        android:layout_marginTop="7dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Rights Reserved."
+        android:id="@+id/textView30"
+        android:layout_below="@+id/textView29"
+        android:layout_alignStart="@+id/imageView5"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp" />
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<!-- Nom -->
+    <!--
+    <TextView
+        android:id="@+id/toptext"
+
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        android:textStyle="bold"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        />
+    -->
+    <!-- Nom -->
+    <TextView
+        android:id="@+id/toptextcomanda"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:singleLine="false"
+        android:ellipsize="marquee"
+        android:layout_toRightOf="@+id/middletextdatacomanda"
+        android:layout_marginLeft="3dp" />
+
+    <!-- Imatge Tag -->
+    <!--
+    <TextView
+        android:id="@+id/middletext"
+
+        android:layout_width="wrap_content"
+        android:layout_height="26dip"
+
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/toptext"
+
+        android:textStyle="bold"
+        android:gravity="center_vertical"
+        />
+-->
+    <!-- Imatge -->
+    <ImageView
+        android:id="@+id/middletextdatacomanda"
+
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+
+
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+
+        android:gravity="center_vertical"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp" />
+
+    <!-- Preu -->
+    <!--
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/middletextdata"
+
+        android:textStyle="bold"
+        android:id="@+id/bottomtext"
+        android:singleLine="false"
+        />
+        -->
+    <!--Preu-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/desctext"
+        android:singleLine="false"
+
+        android:maxWidth="70dp"
+        android:minWidth="70dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/middletextdatacomanda"
+        android:layout_below="@+id/toptextcomanda" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/textView19"
+        android:singleLine="false"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/desctext"
+        android:layout_below="@+id/toptextcomanda" />
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_below="@+id/desctext"
+
+        android:id="@+id/select"
+        android:singleLine="false"
+        android:layout_toRightOf="@id/middletextdata"
+        android:text="Seleccionat: "
+        android:layout_marginTop="7dp"/>
+    -->
+</RelativeLayout>
